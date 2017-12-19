@@ -287,7 +287,8 @@ class Game:
 
         for p in self.players:
 
-            if self.players[(p.place - 1) % 6].
+            if self.players[(p.place - 1) % 6].armies > p.armies:
+                pass
 
 
     def input(self, place, cards_in_hand, wonder):
